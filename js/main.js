@@ -46,5 +46,10 @@ function calculate() {
 
 	let avgspd = length / (time / 3600);
 
-	document.querySelector("#averagespeed").value = avgspd + " km/h";
+	if (time < 1) {
+		document.querySelector("#averagespeed").value = "";
+		document.querySelector("#laptime").value = "";
+	} else {
+		document.querySelector("#averagespeed").value = avgspd + " km/h";
+	}
 }
