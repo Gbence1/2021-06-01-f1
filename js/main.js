@@ -9,17 +9,17 @@ function showCircuit() {
 	$('#circuit').change(function (o) {
 		switch (o.target.value) {
 			case 'ITA':
-				$('#circuitimage').attr('src', 'img/monza.jpg');
+				$('#circuitimage').attr('src', '../src/img/monza.jpg');
 				$('#f1sound')[0].play();
 				break;
 			case 'HUN':
-				$('#circuitimage').attr('src', 'img/hungaroring.jpg');
+				$('#circuitimage').attr('src', '../src/img/hungaroring.jpg');
 				break;
 			case 'BEL':
-				$('#circuitimage').attr('src', 'img/spa.jpg');
+				$('#circuitimage').attr('src', '../src/img/spa.jpg');
 				break;
 			case 'MON':
-				$('#circuitimage').attr('src', 'img/monaco.jpg');
+				$('#circuitimage').attr('src', '../src/img/monaco.jpg');
 				break;
 			default:
 				break;
